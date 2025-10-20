@@ -1,9 +1,9 @@
-package tp5;
+package ej1;
+
 import ej1.Pasaporte;
-import ej1.Foto;
 import ej1.Titular;
 
-public class Tp5 {
+public class NewMain {
 
     public static void main(String[] args) {
         //Composicion
@@ -12,9 +12,10 @@ public class Tp5 {
         
         //Asociacion bidireccional
         Titular titular1 = new Titular("Seba", "2342342");
-
         pasaporte1.setTitular(titular1);
+        
         System.out.println(pasaporte1);
+        System.out.println(titular1.getPasaporte());
         
     }
     
