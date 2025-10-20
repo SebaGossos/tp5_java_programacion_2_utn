@@ -31,6 +31,7 @@ public class Usuario {
     }
 
     public void setCelular(Celular celular) {
+        if(this.celular == celular ) return;
         this.celular = celular;
         if( celular != null && celular.getUsuario()!= this ) {
             celular.setUsuario(this);
@@ -39,8 +40,7 @@ public class Usuario {
 
     @Override
     public String toString() {
-        return "Usuario{" + "nombre=" + nombre + ", dni=" + dni + ", celular=" + celular + '}';
+        return "Usuario{" + "nombre=" + nombre + ", dni=" + dni + '}';
     }
-    
     
 }
