@@ -9,7 +9,14 @@ package main;
 //import ej2.Usuario;
 
 //3)
+//import ej3.Autor;
+//import ej3.Editorial;
+//import ej3.Libro;
 
+//4)
+import ej4.Banco;
+import ej4.Cliente;
+import ej4.TarjetaDeCredito;
 
 public class Main {
 
@@ -41,7 +48,23 @@ public class Main {
 
 
 ////        3)
-          
+//        Autor autor = new Autor("jk rowgling", "UK" );
+//        Editorial editorial = new Editorial("Warner", "USA");
+////       Agregacion
+//        Libro libro = new Libro("harry potter", "UK", editorial);
+//        
+////        Asociacion unidireccional
+//        libro.setAutor( autor );
+//        
+//        System.out.println(libro);
+
+////        4)
+        Banco banco = new Banco("BBVA","234234234");
+        Cliente cliente = new Cliente("Seba","22356465");
+        TarjetaDeCredito tarjetaDeCredito("8234234", "4 de agosto 2029", banco);
+        
+        tarjetaDeCredito.setCliente(cliente);
+        System.out.println(tarjetaDeCredito);
     }
     
 }
