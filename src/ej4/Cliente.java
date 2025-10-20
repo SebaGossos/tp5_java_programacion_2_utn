@@ -40,7 +40,7 @@ public class Cliente {
 
     @Override
     public String toString() {
-        return "Cliente{" + "nombre=" + nombre + ", dni=" + dni + ", tarjetaDeCredito=" + tarjetaDeCredito.getCliente() + '}';
+        return "Cliente{" + "nombre=" + nombre + ", dni=" + dni + ", tarjetaDeCredito=" + tarjetaDeCredito.getNumero()+ '}';
     }
     
     

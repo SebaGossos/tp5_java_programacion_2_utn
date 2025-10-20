@@ -14,9 +14,19 @@ package main;
 //import ej3.Libro;
 
 //4)
-import ej4.Banco;
-import ej4.Cliente;
-import ej4.TarjetaDeCredito;
+//import ej4.Banco;
+//import ej4.Cliente;
+//import ej4.TarjetaDeCredito;
+
+//5)
+//import ej5.Computadora;
+//import ej5.PlacaMadre;
+//import ej5.Propietario;
+
+//6)
+import ej6.Cliente;
+import ej6.Mesa;
+import ej6.Reserva;
 
 public class Main {
 
@@ -59,12 +69,39 @@ public class Main {
 //        System.out.println(libro);
 
 ////        4)
-        Banco banco = new Banco("BBVA","234234234");
-        Cliente cliente = new Cliente("Seba","22356465");
-        TarjetaDeCredito tarjetaDeCredito("8234234", "4 de agosto 2029", banco);
+//        Banco banco = new Banco("BBVA","234234234");
+//        Cliente cliente = new Cliente("Seba","22356465");
+////        Agrupacion
+//        TarjetaDeCredito tarjetaDeCredito = new TarjetaDeCredito("8234234", "4 de agosto 2029", banco);
+//        
+////        Asociacion Bidireccional
+//        tarjetaDeCredito.setCliente(cliente);
+//        
+//        System.out.println(tarjetaDeCredito);
+
+////        5)
+//        Propietario propietario = new Propietario("Seba", "342435345");
+//        Computadora computadora = new Computadora( "lenovo", "797y", "b450", "am5" );
+//        
+//        computadora.setPropietario(propietario);
+//        
+//        System.out.println(computadora);
+
+////        6)
+        Mesa mesa = new Mesa("234523","40");
+//        Agregacion
+        Reserva reserva = new Reserva("3 de abril 1998", "16:43", mesa);
+        Cliente cliente = new Cliente( "seba", "879834223");
+//        Asociacion
+        reserva.setCliente(cliente);
         
-        tarjetaDeCredito.setCliente(cliente);
-        System.out.println(tarjetaDeCredito);
+        System.out.println(reserva);
+
+        
+        
+        
+        
+        
     }
     
 }
