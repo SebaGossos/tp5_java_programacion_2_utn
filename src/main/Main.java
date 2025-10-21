@@ -39,31 +39,31 @@ package main;
 //import ej8.Usuario;
 
 //9)
-import ej9.CitaMedica;
-import ej9.Paciente;
-import ej9.Profesional;
+//import ej9.CitaMedica;
+//import ej9.Paciente;
+//import ej9.Profesional;
 
-////10)
+//10)
 //import ej10.ClaveSeguridad;
 //import ej10.CuentaBancaria;
 //import ej10.Titular;
-//
-////11)
+
+//11)
 //import ej11.Artista;
 //import ej11.Cancion;
 //import ej11.Reproductor;
-//
-////12)
+
+//12)
 //import ej12.Calculadora;
 //import ej12.Contribuyente;
 //import ej12.Impuesto;
-//
-////13)
+
+//13)
 //import ej13.CodigoQR;
 //import ej13.GeneradorQR;
 //import ej13.Usuario;
-//
-////14)
+
+//14)
 //import ej14.EditorVideo;
 //import ej14.Proyecto;
 //import ej14.Render;
@@ -155,12 +155,55 @@ public class Main {
 //        Documento documento = new Documento("buenos dias", "saludos", "2234h", "2 de enero 2020", usuario);
 //        System.out.println(documento);
 
-//         9)
+////         9)
+//        Paciente paciente = new Paciente("Seba", "osde");
+//        Profesional profesional = new Profesional("Programador","backend");
+//        
+//        CitaMedica citaMedica = new CitaMedica("23 de diciembre", "12:33");
+//        
+////        Asociacion Unidireccional
+//        citaMedica.setPaciente(paciente);
+//        citaMedica.setProfesional(profesional);
+//        
+//        System.out.println(citaMedica);
+
+////          10)
         
+//        CuentaBancaria cuentaBancaria = new CuentaBancaria("234324", "200000", "23423477777", "23 de marzo 2024");
+//        Titular titular = new Titular("Seba", "234523423");
+//        
+////        Asocicacion bidireccional
+//        cuentaBancaria.setTitular(titular);
+//        System.out.println(cuentaBancaria);
+
+////         11)
+//        Artista artista = new Artista( "bad bunny", "Trap");
+//        Cancion cancion = new Cancion( "un verano sin ti");
+////        Asociacion unidireccional
+//        cancion.setArtista(artista);
+//        
+////        Dependencia de uso
+//        Reproductor reproductor = new Reproductor();
+//        reproductor.reproducir(cancion);
         
-        
-        
-        
+////            12)
+//        Contribuyente contribuyente = new Contribuyente("Seba", "234324");
+//        Impuesto impuesto = new Impuesto("30000");
+////        Asociacion Unidireccional
+//        impuesto.setContribuyente(contribuyente);
+////        Dependecia de uso
+//        Calculadora calculadora = new Calculadora();
+//        calculadora.calcular(impuesto);
+
+////            13)
+////         Dependencia de Creacion
+//           GeneradorQR generadorQR = new GeneradorQR();
+//           generadorQR.generar( "jshda23", "pedro", "pedro@gmail.com");
+           
+//           14)
+//            Dependencia de Creacion
+//            EditorVideo editorVideo = new EditorVideo();
+//            editorVideo.exportar("234jsd", "proof", "1hs");
     }
     
 }
