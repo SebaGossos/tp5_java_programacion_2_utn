@@ -24,9 +24,50 @@ package main;
 //import ej5.Propietario;
 
 //6)
-import ej6.Cliente;
-import ej6.Mesa;
-import ej6.Reserva;
+//import ej6.Cliente;
+//import ej6.Mesa;
+//import ej6.Reserva;
+
+//7)
+//import ej7.Vehiculo;
+//import ej7.Conductor;
+//import ej7.Motor;
+
+//8)
+//import ej8.Documento;
+//import ej8.FirmaDigital;
+//import ej8.Usuario;
+
+//9)
+import ej9.CitaMedica;
+import ej9.Paciente;
+import ej9.Profesional;
+
+////10)
+//import ej10.ClaveSeguridad;
+//import ej10.CuentaBancaria;
+//import ej10.Titular;
+//
+////11)
+//import ej11.Artista;
+//import ej11.Cancion;
+//import ej11.Reproductor;
+//
+////12)
+//import ej12.Calculadora;
+//import ej12.Contribuyente;
+//import ej12.Impuesto;
+//
+////13)
+//import ej13.CodigoQR;
+//import ej13.GeneradorQR;
+//import ej13.Usuario;
+//
+////14)
+//import ej14.EditorVideo;
+//import ej14.Proyecto;
+//import ej14.Render;
+
 
 public class Main {
 
@@ -88,15 +129,33 @@ public class Main {
 //        System.out.println(computadora);
 
 ////        6)
-        Mesa mesa = new Mesa("234523","40");
-//        Agregacion
-        Reserva reserva = new Reserva("3 de abril 1998", "16:43", mesa);
-        Cliente cliente = new Cliente( "seba", "879834223");
-//        Asociacion
-        reserva.setCliente(cliente);
-        
-        System.out.println(reserva);
+//        Mesa mesa = new Mesa("234523","40");
+////        Agregacion
+//        Reserva reserva = new Reserva("3 de abril 1998", "16:43", mesa);
+//        Cliente cliente = new Cliente( "seba", "879834223");
+////        Asociacion
+//        reserva.setCliente(cliente);
+//        
+//        System.out.println(reserva);
 
+////        7)
+//        Motor motor = new Motor("Gasoil", "245hg");
+//        Conductor conductor = new Conductor( "Seba", "arg");
+//        
+////        Agregacion motor
+//        Vehiculo vehiculo = new Vehiculo("asd354", "Toyota", motor);
+////        Asociacion bidireccional
+//        vehiculo.setConductor(conductor);
+//        
+//        System.out.println(vehiculo);
+        
+////        8)
+//        Usuario usuario = new Usuario("Seba", "seba@gmail.com");
+//        
+//        Documento documento = new Documento("buenos dias", "saludos", "2234h", "2 de enero 2020", usuario);
+//        System.out.println(documento);
+
+//         9)
         
         
         
